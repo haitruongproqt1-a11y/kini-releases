@@ -1,23 +1,23 @@
 {
-  "version": "1.5.11",
-  "build_number": 78,
-  "title": "KINI Chat v1.5.11 - Fast-OTA Thử Nghiệm",
+  "version": "1.5.12",
+  "build_number": 79,
+  "title": "KINI Chat v1.5.12 - Fix Crash Chia Sẻ Màn Hình Mobile",
   "changelog": [
-    "Bản cập nhật Fast-OTA v1.5.11 (Build 78) tối ưu thử nghiệm siêu tốc.",
-    "Tập trung hoàn thiện hệ thống gọi WebRTC và kiểm thử đồng bộ đa thiết bị.",
-    "Bỏ qua biên dịch APK trong phiên thử nghiệm để tối ưu thời gian đóng gói dưới 30s."
+    "Bản cập nhật Fast-OTA v1.5.12 (Build 79) sửa lỗi màn hình Mobile.",
+    "Khắc phục triệt để lỗi crash văng ứng dụng khi bấm chia sẻ màn hình trên Mobile (Android 14+).",
+    "Tối ưu hóa vòng đời Foreground Service MediaProjection và xử lý hủy chia sẻ êm ái."
   ],
-  "release_notes": "Bản cập nhật Fast-OTA KINI Chat v1.5.11 (Build 78) dành cho thử nghiệm nhanh.",
-  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/update_v1.5.11.zip",
-  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/latest_ota_package.zip",
-  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/update_v1.5.11.zip",
-  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/update_v1.5.11.zip",
+  "release_notes": "Bản cập nhật Fast-OTA KINI Chat v1.5.12 (Build 79) khắc phục lỗi chia sẻ màn hình Mobile.",
+  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.12/update_v1.5.12.zip",
+  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.12/latest_ota_package.zip",
+  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.12/update_v1.5.12.zip",
+  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.12/update_v1.5.12.zip",
   "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/KINI_Chat_v1.5.11_Mobile.apk",
   "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/KINI_Chat_v1.5.11_Mobile.apk",
-  "release_date": "2026-10-15 20:02:29",
-  "released_at": "2026-10-15 20:02:29",
+  "release_date": "2026-10-15 20:25:48",
+  "released_at": "2026-10-15 20:25:48",
   "is_target_global": true,
   "is_mandatory": false,
   "platform": "all",
-  "sha256": "DEE310A9E8795DB3309AFF81769E3D3C601E16336A6FD4DE21F819CD7AAFE8F8"
+  "sha256": "C5312FF103C15D21BFE5BA39C22EBF04BD5A153DC08B92AC686C1C98B5FBF3E6"
 }
