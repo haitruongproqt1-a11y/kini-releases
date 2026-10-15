@@ -1,0 +1,25 @@
+{
+  "version": "1.5.4",
+  "build_number": 71,
+  "title": "KINI Chat v1.5.4 - Khôi Phục Hoàn Toàn Phòng Họp Nhóm Ổn Định, Chống Văng Khi Chia Sẻ Màn Hình & Tối Ưu Hạ Ping (<40ms)",
+  "changelog": [
+    "Khôi phục cơ chế đồng bộ hiện diện 2 chiều (Bidirectional Presence Discovery) và kênh tín hiệu kép (webrtc_signal & meeting_signal), đảm bảo PC và Mobile kết nối phòng họp tức thì (hiện đầy đủ 2/16 thành viên, hình ảnh rõ nét).",
+    "Loại bỏ hoàn toàn cơ chế tự động chuyển phòng cũ (_resolvePendingInviteMeetingCode), giữ chuẩn xác 100% mã phòng người dùng chọn.",
+    "Khắc phục triệt để lỗi thoát ứng dụng khi chia sẻ màn hình trên Android 16 & MediaTek: Tuân thủ chuẩn W3C tráo track video trực tiếp, loại bỏ hoàn toàn assertion SIGABRT libc.so (abort+156).",
+    "Giữ nguyên cấu hình cụm ICE Servers tối ưu độ trễ siêu thấp (< 40ms) với STUN Cloudflare/Google và TURN Châu Á / Singapore UDP (turn:asia.relay.metered.ca).",
+    "Tuân thủ tuyệt đối quy tắc hệ thống: CHỈ xuất bản gói OTA Windows (latest_ota_package.zip, update_v1.5.4.zip) và Android APK (KINI_Chat_v1.5.4_Mobile.apk), TUYỆT ĐỐI KHÔNG build bộ cài đặt EXE."
+  ],
+  "release_notes": "Phiên bản KINI Chat v1.5.4 (Build 71) khôi phục chuẩn xác kết nối phòng họp nhóm giữa PC và Mobile, tối ưu hạ ping cuộc gọi video về dưới 40ms và sửa triệt để lỗi thoát ứng dụng khi chia sẻ màn hình.",
+  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.4/update_v1.5.4.zip",
+  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.4/latest_ota_package.zip",
+  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.4/update_v1.5.4.zip",
+  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.4/update_v1.5.4.zip",
+  "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.4/KINI_Chat_v1.5.4_Mobile.apk",
+  "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.4/KINI_Chat_v1.5.4_Mobile.apk",
+  "release_date": "2026-10-15 10:12:13",
+  "released_at": "2026-10-15 10:12:13",
+  "is_target_global": true,
+  "is_mandatory": false,
+  "platform": "all",
+  "sha256": "C01DF0A3EC35A331CBDD13D8BB865C9D42D4C43FB3A105397B4D4F906026DAE3"
+}
