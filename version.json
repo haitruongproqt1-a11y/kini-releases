@@ -1,26 +1,23 @@
 {
   "version": "1.5.11",
   "build_number": 78,
-  "title": "KINI Chat v1.5.11 - Hệ Thống Đàm Thoại WebRTC Chuẩn Bất Tử Cho PC & Mobile",
+  "title": "KINI Chat v1.5.11 - Fast-OTA Thử Nghiệm",
   "changelog": [
-    "Tái cấu trúc hoàn hảo hệ thống gọi WebRTC (Clean Architecture) với CallService, WebRtcCallController và CallScreen hợp nhất.",
-    "Quy trình Safe Shutdown 5 bước: Giải phóng PeerConnection -> Tracks -> Streams -> Renderers -> Chế độ âm thanh bình thường (MODE_NORMAL), triệt tiêu 100% lỗi crash SIGABRT trên Android 15/16 và chống nóng máy.",
-    "Độ trễ siêu thấp Ping nội địa 14 - 40ms: Bắt buộc ưu tiên P2P trực tiếp qua Google STUN, tối ưu codec Opus 48kHz stereo, chỉ tự động dùng Metered TURN Singapore khi bị chặn bởi tường lửa.",
-    "Chia sẻ màn hình mượt mà đa nền tảng: Chọn cửa sổ/màn hình trên Windows (getDisplayMedia) và Native Screen Capture trên Android/iOS không làm sập cuộc gọi khi người dùng hủy cấp quyền.",
-    "Đấu nối điều hướng hợp nhất & PopScope chống kẹt: Cúp máy lập tức đóng màn hình đàm thoại trong 0 giây, giải phóng phòng họp tức thời.",
-    "Tuân thủ tuyệt đối quy định hệ thống: CHỈ tải lên các gói OTA Windows (latest_ota_package.zip, update_v1.5.11.zip) và Android APK (KINI_Chat_v1.5.11_Mobile.apk), TUYỆT ĐỐI KHÔNG build bộ cài EXE."
+    "Bản cập nhật Fast-OTA v1.5.11 (Build 78) tối ưu thử nghiệm siêu tốc.",
+    "Tập trung hoàn thiện hệ thống gọi WebRTC và kiểm thử đồng bộ đa thiết bị.",
+    "Bỏ qua biên dịch APK trong phiên thử nghiệm để tối ưu thời gian đóng gói dưới 30s."
   ],
-  "release_notes": "Phiên bản KINI Chat v1.5.11 (Build 78) nâng cấp toàn diện hệ thống Gọi Thoại, Gọi Video và Chia Sẻ Màn Hình WebRTC chuẩn bất tử, đạt độ trễ 14-40ms và loại bỏ hoàn toàn sự cố crash trên cả PC và Mobile.",
+  "release_notes": "Bản cập nhật Fast-OTA KINI Chat v1.5.11 (Build 78) dành cho thử nghiệm nhanh.",
   "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/update_v1.5.11.zip",
   "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/latest_ota_package.zip",
   "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/update_v1.5.11.zip",
   "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/update_v1.5.11.zip",
   "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/KINI_Chat_v1.5.11_Mobile.apk",
   "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.5.11/KINI_Chat_v1.5.11_Mobile.apk",
-  "release_date": "2026-10-15 19:34:07",
-  "released_at": "2026-10-15 19:34:07",
+  "release_date": "2026-10-15 20:02:29",
+  "released_at": "2026-10-15 20:02:29",
   "is_target_global": true,
   "is_mandatory": false,
   "platform": "all",
-  "sha256": "ECD5482CE390CD42018626150C4F9316C3931E4334D246169FD269C3D50A278A"
+  "sha256": "DEE310A9E8795DB3309AFF81769E3D3C601E16336A6FD4DE21F819CD7AAFE8F8"
 }
