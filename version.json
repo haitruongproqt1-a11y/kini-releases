@@ -1,9 +1,9 @@
 {
-  "version": "1.7.1",
-  "build_number": 91,
-  "title": "KINI Chat v1.7.1 - Chuẩn Hóa Phân Quyền Admin, Fix OTA Mobile 2%, Giao Diện Phòng Họp 16 Người & WebRTC P2P",
+  "version": "1.7.2",
+  "build_number": 92,
+  "title": "KINI Chat v1.7.2 - Chuẩn Hóa Phân Quyền Admin, Fix OTA Mobile 2%, Giao Diện Phòng Họp 16 Người & WebRTC P2P",
   "changelog": [
-    "Phát hành chính thức KINI Chat v1.7.1 (Build 91) qua gói cập nhật OTA Fast.",
+    "Phát hành chính thức KINI Chat v1.7.2 (Build 92) qua gói cập nhật OTA Fast.",
     "Chuẩn hóa phân quyền Admin: Chỉ duy nhất tài khoản haitruongproqt@gmail.com mới có quyền Quản trị tối cao và hiển thị Trung Tâm Quản Trị.",
     "Khắc phục triệt để lỗi tải cập nhật OTA trên Mobile dừng ở 2% và ngăn chặn vòng lặp tải vô hạn.",
     "Khắc phục mất tin nhắn, mất cuộc gọi nhỡ và đồng bộ Realtime tức thì ngay khi mở lại ứng dụng.",
@@ -11,19 +11,19 @@
     "Hỗ trợ phòng họp tối đa 16 người tham gia với giao diện phân trang (4 người/trang) và Dots Indicator mượt mà trên Mobile.",
     "Khắc phục triệt để lỗi văng/thoát ứng dụng khi chia sẻ màn hình trên Android, tối ưu hóa WebRTC P2P ổn định cao."
   ],
-  "release_notes": "KINI Chat v1.7.1 (Build 91): Chuẩn hóa quyền Admin duy nhất, fix lỗi OTA Mobile 2%, đồng bộ tin nhắn/cuộc gọi nhỡ, tối ưu phòng họp 16 người và fix văng app khi chia sẻ màn hình.",
-  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.1/update_v1.7.1.zip",
-  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.1/latest_ota_package.zip",
-  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.1/update_v1.7.1.zip",
-  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.1/update_v1.7.1.zip",
-  "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.1/KINI_Chat_v1.7.1_Mobile.apk",
-  "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.1/KINI_Chat_v1.7.1_Mobile.apk",
-  "release_date": "2026-10-19 05:20:28",
-  "released_at": "2026-10-19 05:20:28",
+  "release_notes": "KINI Chat v1.7.2 (Build 92): Chuẩn hóa quyền Admin duy nhất, fix lỗi OTA Mobile 2%, đồng bộ tin nhắn/cuộc gọi nhỡ, tối ưu phòng họp 16 người và fix văng app khi chia sẻ màn hình.",
+  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.2/update_v1.7.2.zip",
+  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.2/latest_ota_package.zip",
+  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.2/update_v1.7.2.zip",
+  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.2/update_v1.7.2.zip",
+  "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.2/KINI_Chat_v1.7.2_Mobile.apk",
+  "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.7.2/KINI_Chat_v1.7.2_Mobile.apk",
+  "release_date": "2026-10-19 05:44:21",
+  "released_at": "2026-10-19 05:44:21",
   "is_target_global": false,
   "is_mandatory": false,
   "force_update": false,
   "forceUpdate": false,
   "platform": "all",
-  "sha256": "83640D9185BAE29083CA49D4606D8C12BA64D921CC0746736C2911ACD5503C63"
+  "sha256": "66070BC2476C31003390C23297DFA2A84D7C42B0E5292D19FAD734FB2D61419F"
 }
