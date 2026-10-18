@@ -17,12 +17,12 @@
   "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.6.8/update_v1.6.8.zip",
   "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.6.8/KINI_Chat_v1.6.8_Mobile.apk",
   "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.6.8/KINI_Chat_v1.6.8_Mobile.apk",
-  "release_date": "2026-10-18 20:08:22",
-  "released_at": "2026-10-18 20:08:22",
+  "release_date": "2026-10-18 20:36:27",
+  "released_at": "2026-10-18 20:36:27",
   "is_target_global": false,
   "is_mandatory": false,
   "force_update": false,
   "forceUpdate": false,
   "platform": "all",
-  "sha256": "650CBCEC42D0650B64EECD9B0B8213084E67FD5C774DCCCF8B651D9E2715F368"
+  "sha256": "5C491B98C440DF97B9DB1F428BE0B9E80E5C1FAFFD50DCEE5240880CFD56C0E3"
 }
