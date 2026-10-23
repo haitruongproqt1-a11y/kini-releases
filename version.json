@@ -1,26 +1,26 @@
 {
-  "version": "1.9.7",
-  "build_number": 117,
-  "title": "KINI Chat v1.9.7 • Tối Ưu Album Ảnh/Video & Bổ Sung Quay Video Camera",
+  "version": "1.9.8",
+  "build_number": 118,
+  "title": "KINI Chat v1.9.8 • Sửa Hiển Thị Tạo Nhóm, Chống Crash & Tối Ưu Cuộc Gọi",
   "changelog": [
-    "Phát hành chính thức KINI Chat v1.9.7 (Build 117) qua gói cập nhật OTA.",
-    "Xóa bỏ hoàn toàn ô 'Mở Album máy' trong lưới Album Ảnh & Video để giao diện gọn gàng, trực quan và không bị trùng lặp.",
-    "Nâng cấp tính năng Camera: Hỗ trợ linh hoạt cả 2 chế độ Chụp ảnh mới và Quay video mới trực tiếp từ camera điện thoại.",
-    "Duy trì ổn định cuộc gọi 4G-WiFi với cụm TURN Relay TCP 443 và kéo thả gửi Thư mục .zip chuẩn Zalo."
+    "Phát hành chính thức KINI Chat v1.9.8 (Build 118) qua gói cập nhật OTA.",
+    "Khắc phục triệt để lỗi màu chữ và độ tương phản tại màn hình Tạo Nhóm Trò Chuyện Mới: Tên bạn bè, ô tìm kiếm và tên nhóm hiển thị sắc nét, trực quan 100% trên cả giao diện Sáng và Tối.",
+    "Sửa dứt điểm lỗi crash thoát ứng dụng (0xc0000005) trên PC khi đàm thoại và gọi video bằng cơ chế lazy initialization và giải phóng renderers WebRTC tuần tự, an toàn.",
+    "Tối ưu hóa thiết lập kênh truyền âm thanh cuộc gọi (P2P và TURN Relay) giúp các thiết bị PC và Mobile kết nối thông suốt, đàm thoại ngay lập tức."
   ],
-  "release_notes": "• Phát hành chính thức KINI Chat v1.9.7 (Build 117) qua gói cập nhật OTA.\n• Xóa bỏ hoàn toàn ô 'Mở Album máy' trong lưới Album Ảnh & Video để giao diện gọn gàng, trực quan và không bị trùng lặp.\n• Nâng cấp tính năng Camera: Hỗ trợ linh hoạt cả 2 chế độ Chụp ảnh mới và Quay video mới trực tiếp từ camera điện thoại.\n• Duy trì ổn định cuộc gọi 4G-WiFi với cụm TURN Relay TCP 443 và kéo thả gửi Thư mục .zip chuẩn Zalo.",
-  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.7/update_v1.9.7.zip",
-  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.7/latest_ota_package.zip",
-  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.7/update_v1.9.7.zip",
-  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.7/update_v1.9.7.zip",
-  "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.7/KINI_Chat_v1.9.7_Mobile.apk",
-  "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.7/KINI_Chat_v1.9.7_Mobile.apk",
-  "release_date": "2026-10-23 20:39:58",
-  "released_at": "2026-10-23 20:39:58",
+  "release_notes": "• Phát hành chính thức KINI Chat v1.9.8 (Build 118) qua gói cập nhật OTA.\n• Khắc phục triệt để lỗi màu chữ và độ tương phản tại màn hình Tạo Nhóm Trò Chuyện Mới: Tên bạn bè, ô tìm kiếm và tên nhóm hiển thị sắc nét, trực quan 100% trên cả giao diện Sáng và Tối.\n• Sửa dứt điểm lỗi crash thoát ứng dụng (0xc0000005) trên PC khi đàm thoại và gọi video bằng cơ chế lazy initialization và giải phóng renderers WebRTC tuần tự, an toàn.\n• Tối ưu hóa thiết lập kênh truyền âm thanh cuộc gọi (P2P và TURN Relay) giúp các thiết bị PC và Mobile kết nối thông suốt, đàm thoại ngay lập tức.",
+  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.8/update_v1.9.8.zip",
+  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.8/latest_ota_package.zip",
+  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.8/update_v1.9.8.zip",
+  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.8/update_v1.9.8.zip",
+  "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.8/KINI_Chat_v1.9.8_Mobile.apk",
+  "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v1.9.8/KINI_Chat_v1.9.8_Mobile.apk",
+  "release_date": "2026-10-23 21:50:08",
+  "released_at": "2026-10-23 21:50:08",
   "is_target_global": false,
   "is_mandatory": false,
   "force_update": false,
   "forceUpdate": false,
   "platform": "all",
-  "sha256": "3D58EE79240F4853C7AD3678711469B6791DABDCA37D438716AEDD36975281DB"
+  "sha256": "3EEAD3B8B47B0644698C68D316121CB3F5BA0F4B58AE7A978426D889F166C591"
 }
