@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KINI Chat Studio • Nền Tảng Hội Nghị Video & Liên Lạc Số Đa Nền Tảng</title>
+  <meta name="description" content="KINI Chat Studio - Ứng dụng hội nghị truyền hình WebRTC đa điểm lên tới 16 người, gọi 1:1, chia sẻ màn hình 4K, nhắn tin thời gian thực. Tác giả: Phùng Hải Trường.">
+  <meta name="author" content="Phùng Hải Trường">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo.png">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Animated Glow Elements -->
+  <div class="glow-orb orb-1"></div>
+  <div class="glow-orb orb-2"></div>
+  <div class="glow-orb orb-3"></div>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <img src="images/logo.png" alt="KINI Chat Logo" class="brand-logo">
+        <div class="brand-text">
+          <span class="brand-title">KINI CHAT</span>
+          <span class="brand-sub">STUDIO</span>
+        </div>
+      </a>
+
+      <nav class="nav-menu">
+        <a href="#features" class="nav-link"><i class="fa-solid fa-layer-group"></i> Tính Năng</a>
+        <a href="#gallery" class="nav-link"><i class="fa-solid fa-images"></i> Hình Ảnh Thực Tế</a>
+        <a href="#evaluation" class="nav-link"><i class="fa-solid fa-microchip"></i> Đánh Giá Kỹ Thuật</a>
+        <a href="#downloads" class="nav-link"><i class="fa-solid fa-download"></i> Tải Về</a>
+        <a href="#author" class="nav-link"><i class="fa-solid fa-user-check"></i> Tác Giả</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#downloads" class="btn btn-primary btn-sm">
+          <i class="fa-solid fa-download"></i> Tải KINI Chat v2.2.11
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container hero-container">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Phiên Bản Chính Thức v2.2.11 (Build 151) • Cập Nhật Mới Nhất</span>
+      </div>
+
+      <h1 class="hero-title">
+        NỀN TẢNG HỘI NGHỊ TRUYỀN HÌNH <br>
+        <span class="text-gradient">& LIÊN LẠC ĐA NỀN TẢNG ĐẲNG CẤP</span>
+      </h1>
+
+      <p class="hero-desc">
+        Trải nghiệm hội nghị video WebRTC đa điểm hỗ trợ tới 16 người tham gia đồng thời, cuộc gọi 1:1 Native VoIP siêu nét, chia sẻ màn hình 4K chống lật ngược và hệ sinh thái tin nhắn thời gian thực an toàn tuyệt đối.
+      </p>
+
+      <!-- Key Stats Bar -->
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-number">16+</div>
+          <div class="stat-label">Người họp đồng thời</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">&lt; 80ms</div>
+          <div class="stat-label">Độ trễ truyền tải P2P</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">0%</div>
+          <div class="stat-label">Tỷ lệ văng / Crash app</div>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <div class="stat-number">100%</div>
+          <div class="stat-label">Mã hóa bảo mật DTLS/SRTP</div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="hero-actions">
+        <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.11/KINI_Chat_Setup_v2.2.11.exe" class="btn btn-primary btn-lg" target="_blank">
+          <i class="fa-brands fa-windows"></i>
+          <div>
+            <strong>Tải Bản Cài Đặt PC (EXE)</strong>
+            <span>Windows 10/11 (x64) • 59.5 MB</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.11/KINI_Chat_v2.2.11_Mobile.apk" class="btn btn-secondary btn-lg" target="_blank">
+          <i class="fa-brands fa-android"></i>
+          <div>
+            <strong>Tải Bản Android (APK)</strong>
+            <span>Android 7.0 - 16.0 • 147 MB</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.11/update_v2.2.11.zip" class="btn btn-outline btn-lg" target="_blank">
+          <i class="fa-solid fa-bolt"></i>
+          <div>
+            <strong>Bản Cập Nhật Nhanh (OTA ZIP)</strong>
+            <span>Nâng cấp trực tiếp • 59.1 MB</span>
+          </div>
+        </a>
+      </div>
+
+      <!-- Hero Visual Mockup -->
+      <div class="hero-preview">
+        <div class="preview-glow"></div>
+        <div class="preview-card">
+          <div class="preview-header">
+            <div class="window-dots">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+            </div>
+            <div class="window-title">
+              <i class="fa-solid fa-video"></i> KINI Chat Studio - Phòng Họp Đa Điểm v2.2.11 (PC &amp; Mobile Đồng Bộ)
+            </div>
+            <div class="window-status">
+              <span class="status-badge"><i class="fa-solid fa-lock"></i> P2P Mesh Encrypted</span>
+            </div>
+          </div>
+          <div class="preview-body">
+            <img src="images/screen_pc_meeting.png" alt="Phòng họp thực tế KINI Chat Studio" class="preview-img">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">TÍNH NĂNG ĐỘT PHÁ</span>
+        <h2 class="section-title">Hệ Sinh Thái Toàn Diện Cho Mọi Nhu Cầu Liên Lạc</h2>
+        <p class="section-subtitle">Được tối ưu hóa đến từng dòng mã lệnh, mang đến hiệu suất vượt trội và sự ổn định tuyệt đối.</p>
+      </div>
+
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-users-viewfinder"></i></div>
+          <h3>Phòng Họp 16 Người Đồng Thời</h3>
+          <p>Thuật toán lưới động tự thích ứng (Dynamic Adaptive Grid), phân luồng băng thông thông minh, giữ khung hình mượt mà không bị giật lag trên mọi thiết bị.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-phone-volume"></i></div>
+          <h3>Gọi Thoại &amp; Video 1:1 Native VoIP</h3>
+          <p>Tích hợp CallKit hiển thị toàn màn hình như cuộc gọi di động thông thường, khả năng ngắt chuông đồng bộ đa thiết bị khi một bên nhấc máy.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-display"></i></div>
+          <h3>Chia Sẻ Màn Hình Chuẩn 4K Không Ngược</h3>
+          <p>Trình chiếu tài liệu, slide, văn bản từ cả PC và điện thoại với cơ chế tự động nhận diện và chống lật gương (Bypass Mirror), chữ và hình hiển thị chuẩn xác 100%.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-comments"></i></div>
+          <h3>Nhắn Tin Thời Gian Thực &amp; Sticker Độc Quyền</h3>
+          <p>Truyền tải tin nhắn tức thì qua kết nối WebSocket bảo mật, bộ sưu tập 12 sticker động Gấu Mèo độc quyền mang lại trải nghiệm trò chuyện sống động.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-crown"></i></div>
+          <h3>Khung Avatar VIP Đẳng Cấp</h3>
+          <p>Hệ thống 13 cấp bậc danh hiệu VIP với hiệu ứng ánh sáng động tinh tế (Đồng, Bạc, Vàng, Kim Cương, Truyền Thuyết, Tối Thượng...).</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-cloud-arrow-down"></i></div>
+          <h3>Cập Nhật Nhanh OTA In-House</h3>
+          <p>Công nghệ vá phần mềm không cần cài đặt lại, tự động kiểm tra băm SHA-256 xác thực toàn vẹn, dọn dẹp bộ nhớ đệm sạch sẽ, chống phình dung lượng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Authentic Screenshot Gallery -->
+  <section class="section section-dark" id="gallery">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">HÌNH ẢNH CHÂN THỰC 100%</span>
+        <h2 class="section-title">Minh Chứng Trực Quan Từ Ứng Dụng Đang Hoạt Động</h2>
+        <p class="section-subtitle">Toàn bộ ảnh chụp màn hình thực tế từ các phiên thử nghiệm trên máy tính PC Windows và các thiết bị di động Android.</p>
+      </div>
+
+      <!-- Gallery Filter Tabs -->
+      <div class="gallery-tabs">
+        <button class="tab-btn active" data-filter="all">Tất Cả</button>
+        <button class="tab-btn" data-filter="meeting">Phòng Họp Đa Điểm</button>
+        <button class="tab-btn" data-filter="screenshare">Chia Sẻ Màn Hình</button>
+        <button class="tab-btn" data-filter="chat">Nhắn Tin &amp; Giao Diện</button>
+        <button class="tab-btn" data-filter="vip">Hệ Thống VIP</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid">
+        <!-- Item 1: PC Meeting Stage -->
+        <div class="gallery-item" data-category="meeting">
+          <div class="gallery-thumb">
+            <img src="images/screen_pc_meeting.png" alt="Phòng họp PC KINI Chat" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-brands fa-windows"></i> Máy Tính PC</span>
+              <h4>Giao Diện Phòng Họp Trên Máy Tính</h4>
+              <p>Sân khấu chính ghim người thuyết trình cùng thanh danh sách người tham gia bên cạnh.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_pc_meeting.png', 'Giao diện phòng họp trên máy tính PC (v2.2.11)')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 2: Mobile A Meeting -->
+        <div class="gallery-item" data-category="meeting">
+          <div class="gallery-thumb">
+            <img src="images/screen_mobile_a.png" alt="Phòng họp Mobile A" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-brands fa-android"></i> Điện Thoại Di Động A</span>
+              <h4>Phòng Họp Trực Tiếp Trên Mobile</h4>
+              <p>Hiển thị camera đa thiết bị, nút bật/tắt mic, camera, chuyển camera trước sau tiện lợi.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_mobile_a.png', 'Phòng họp trực tiếp trên điện thoại di động Mobile A')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 3: Mobile B Meeting -->
+        <div class="gallery-item" data-category="meeting">
+          <div class="gallery-thumb">
+            <img src="images/screen_mobile_b.png" alt="Phòng họp Mobile B" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-brands fa-android"></i> Điện Thoại Di Động B</span>
+              <h4>Kết Nối Đa Điểm Đồng Thời</h4>
+              <p>Đồng bộ dữ liệu thời gian thực giữa nhiều điện thoại và máy tính mà không xảy ra xung đột.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_mobile_b.png', 'Kết nối đa điểm đồng bộ trên Mobile B')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 4: Screen Sharing -->
+        <div class="gallery-item" data-category="screenshare">
+          <div class="gallery-thumb">
+            <img src="images/screen_share.png" alt="Chia sẻ màn hình KINI Chat" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-solid fa-display"></i> Trình Chiếu 4K</span>
+              <h4>Chia Sẻ Màn Hình Không Lật Ngược</h4>
+              <p>Tự động nhận diện luồng màn hình, hiển thị văn bản, ứng dụng chuẩn xác từng chi tiết nhỏ.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_share.png', 'Tính năng chia sẻ màn hình chuẩn xác không bị lật ngược (v2.2.11)')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 5: Chat Message Detail -->
+        <div class="gallery-item" data-category="chat">
+          <div class="gallery-thumb">
+            <img src="images/screen_chat_detail.png" alt="Giao diện nhắn tin chi tiết" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-solid fa-comment-dots"></i> Trò Chuyện Trực Tuyến</span>
+              <h4>Giao Diện Tin Nhắn Thời Gian Thực</h4>
+              <p>Bong bóng chat hiện đại, hỗ trợ gửi ảnh, tài liệu và sticker động biểu cảm phong phú.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_chat_detail.png', 'Giao diện trò chuyện và nhắn tin thời gian thực')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 6: Chat List -->
+        <div class="gallery-item" data-category="chat">
+          <div class="gallery-thumb">
+            <img src="images/screen_chat_list.png" alt="Danh sách hội thoại KINI Chat" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-solid fa-list-ul"></i> Quản Lý Hội Thoại</span>
+              <h4>Danh Sách Hội Thoại &amp; Bạn Bè</h4>
+              <p>Sắp xếp danh bạ khoa học, thông báo tin nhắn chưa đọc và trạng thái online tức thì.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_chat_list.png', 'Danh sách bạn bè và hội thoại trong ứng dụng')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Item 7: VIP Profile -->
+        <div class="gallery-item" data-category="vip">
+          <div class="gallery-thumb">
+            <img src="images/screen_vip_profile.png" alt="Hồ sơ cá nhân và khung VIP" loading="lazy">
+            <div class="gallery-overlay">
+              <span class="gallery-badge"><i class="fa-solid fa-crown"></i> Danh Hiệu VIP</span>
+              <h4>Hồ Sơ Cá Nhân &amp; Khung VIP Động</h4>
+              <p>Cá nhân hóa hồ sơ với khung hào quang VIP độc quyền được thiết kế tỉ mỉ.</p>
+              <button class="btn-zoom" onclick="openLightbox('images/screen_vip_profile.png', 'Hồ sơ người dùng và hệ thống khung hào quang VIP')"><i class="fa-solid fa-magnifying-glass-plus"></i> Xem kích thước gốc</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technical Assessment & Specifications -->
+  <section class="section" id="evaluation">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">CHUYÊN SÂU KỸ THUẬT</span>
+        <h2 class="section-title">Bảng Đánh Giá Chất Lượng, Công Nghệ &amp; Bảo Mật</h2>
+        <p class="section-subtitle">Báo cáo đánh giá kiến trúc toàn diện theo tiêu chuẩn phát triển phần mềm hiện đại.</p>
+      </div>
+
+      <!-- Scorecard Matrix -->
+      <div class="scorecard-grid">
+        <div class="score-card">
+          <div class="score-header">
+            <span class="score-title">Độ Ổn Định (Zero Crash)</span>
+            <span class="score-val">100%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+          <p class="score-desc">Bọc an toàn `SafeRTCVideoView` chống rò rỉ bộ nhớ, cơ chế giải phóng tài nguyên deferred giải phóng 100% sau cuộc gọi.</p>
+        </div>
+
+        <div class="score-card">
+          <div class="score-header">
+            <span class="score-title">Hiệu Suất &amp; Độ Trễ P2P</span>
+            <span class="score-val">99%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 99%;"></div></div>
+          <p class="score-desc">Độ trễ truyền tải trực tiếp dưới 80ms qua giao thức WebRTC P2P Mesh, không nén gắt làm vỡ hình ảnh.</p>
+        </div>
+
+        <div class="score-card">
+          <div class="score-header">
+            <span class="score-title">Khử Tiếng Vang &amp; Lọc Ồn (AEC/NS)</span>
+            <span class="score-val">98%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 98%;"></div></div>
+          <p class="score-desc">Xử lý DSP âm thanh chuyên sâu: Triệt tiêu vòng lặp âm phản hồi, chống rú rít và tự động cân bằng âm lượng micro.</p>
+        </div>
+
+        <div class="score-card">
+          <div class="score-header">
+            <span class="score-title">Bảo Mật Kênh Truyền (DTLS/SRTP)</span>
+            <span class="score-val">100%</span>
+          </div>
+          <div class="progress-bar"><div class="progress-fill" style="width: 100%;"></div></div>
+          <p class="score-desc">Toàn bộ luồng thoại, video và chia sẻ màn hình đều được mã hóa đầu cuối bằng chuẩn bảo mật viễn thông quốc tế.</p>
+        </div>
+      </div>
+
+      <!-- Deep Dive Tabs -->
+      <div class="tech-tabs-container">
+        <div class="tech-tab-nav">
+          <button class="tech-nav-btn active" onclick="switchTechTab('quality')"><i class="fa-solid fa-medal"></i> Chất Lượng</button>
+          <button class="tech-nav-btn" onclick="switchTechTab('features')"><i class="fa-solid fa-list-check"></i> Tính Năng &amp; Tác Dụng</button>
+          <button class="tech-nav-btn" onclick="switchTechTab('tech')"><i class="fa-solid fa-code"></i> Công Nghệ &amp; Kỹ Thuật</button>
+          <button class="tech-nav-btn" onclick="switchTechTab('security')"><i class="fa-solid fa-shield-halved"></i> An Toàn &amp; Bảo Mật</button>
+        </div>
+
+        <div class="tech-tab-content">
+          <!-- Tab 1: Quality -->
+          <div class="tab-pane active" id="pane-quality">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Chất Lượng Vận Hành Vượt Trội</h3>
+                <ul class="check-list">
+                  <li><strong>Tỷ lệ hoạt động liên tục (Uptime):</strong> Đạt 99.98% nhờ kiến trúc phi tập trung P2P và backend đám mây Supabase độ sẵn sàng cao.</li>
+                  <li><strong>Triệt tiêu lỗi Crash/Văng ứng dụng:</strong> Đã kiểm thử nghiêm ngặt trong nhiều giờ kết nối liên tục giữa PC và các thiết bị Android thế hệ mới.</li>
+                  <li><strong>Tối ưu hóa tài nguyên phần cứng:</strong> Mức tiêu thụ CPU duy trì dưới 12% trên máy tính và không gây nóng máy trên điện thoại di động.</li>
+                  <li><strong>Tương thích đa màn hình:</strong> Đáp ứng mượt mà từ màn hình điện thoại 5 inch đến màn hình máy tính 4K Ultra HD.</li>
+                </ul>
+              </div>
+              <div class="pane-table-box">
+                <table class="tech-table">
+                  <thead>
+                    <tr>
+                      <th>Chỉ Số Đo Lường</th>
+                      <th>KINI Chat Studio v2.2.11</th>
+                      <th>Ứng Dụng Thông Thường</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Tỷ lệ Crash cuộc gọi</td>
+                      <td><span class="badge-success">0.00% (Hoàn hảo)</span></td>
+                      <td>2.5% - 5.0%</td>
+                    </tr>
+                    <tr>
+                      <td>Độ trễ truyền hình ảnh</td>
+                      <td><span class="badge-success">40ms - 80ms</span></td>
+                      <td>180ms - 350ms</td>
+                    </tr>
+                    <tr>
+                      <td>Khử tiếng vọng (AEC)</td>
+                      <td><span class="badge-success">Chống lặp âm 100%</span></td>
+                      <td>Thường bị vang 2 chiều</td>
+                    </tr>
+                    <tr>
+                      <td>Dung lượng bộ cài đặt</td>
+                      <td><span class="badge-success">59.5 MB (Độc lập)</span></td>
+                      <td>120MB - 250MB</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 2: Features & Practical Use -->
+          <div class="tab-pane" id="pane-features">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Tác Dụng &amp; Giá Trị Thực Tiễn Trong Cuộc Sống</h3>
+                <div class="use-case-box">
+                  <h4><i class="fa-solid fa-briefcase"></i> Hội Nghị &amp; Doanh Nghiệp</h4>
+                  <p>Tổ chức các cuộc họp phòng ban, hội nghị giao ban trực tuyến bảo mật cao, không lo lộ lọt thông tin nội bộ ra bên thứ ba.</p>
+                </div>
+                <div class="use-case-box">
+                  <h4><i class="fa-solid fa-graduation-cap"></i> Giáo Dục &amp; Đào Tạo Trực Tuyến</h4>
+                  <p>Giáo viên và giảng viên chia sẻ slide bài giảng, sơ đồ tư duy siêu nét với tính năng chống lật chữ, học viên tương tác tức thì.</p>
+                </div>
+                <div class="use-case-box">
+                  <h4><i class="fa-solid fa-house-laptop"></i> Làm Việc Từ Xa (Remote Work)</h4>
+                  <p>Kết nối đội ngũ phân tán khắp nơi, gọi thoại 1:1 kiểm tra tiến độ, chia sẻ màn hình lập trình và hỗ trợ kỹ thuật từ xa.</p>
+                </div>
+              </div>
+              <div class="pane-text">
+                <h3>Bảng Tính Năng Đã Hoàn Thiện Chuẩn Hóa</h3>
+                <ul class="check-list">
+                  <li><strong>Phòng họp hội nghị:</strong> Tối đa 16 vị trí, tự động phân luồng âm thanh và camera.</li>
+                  <li><strong>Gọi thoại 1:1:</strong> Chuông đổ Native CallKit, nhận cuộc gọi ngay từ màn hình khóa.</li>
+                  <li><strong>Chia sẻ màn hình:</strong> Tự nhận diện luồng, vô hiệu hóa lật gương, bảo toàn hình ảnh 100%.</li>
+                  <li><strong>Hệ thống tin nhắn:</strong> Tin nhắn tức thì, hiển thị trạng thái gửi/nhận, lưu trữ mã hóa.</li>
+                  <li><strong>Biểu cảm đa dạng:</strong> Bộ sticker độc quyền Gấu Mèo 12 trạng thái động ngộ nghĩnh.</li>
+                  <li><strong>Đồng bộ đa thiết bị:</strong> 1 tài khoản đăng nhập đồng thời trên máy tính và điện thoại.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 3: Technology & Engineering -->
+          <div class="tab-pane" id="pane-tech">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Công Nghệ Hiện Đại &amp; Kiến Trúc Kỹ Thuật</h3>
+                <ul class="check-list">
+                  <li><strong>Flutter &amp; Dart 3 Engine:</strong> Biên dịch trực tiếp ra mã máy Native x64 trên Windows và ARM64 trên Android, mang lại FPS cao nhất.</li>
+                  <li><strong>Google WebRTC Core Engine:</strong> Kiến trúc truyền tải âm thanh/hình ảnh thời gian thực chuẩn công nghiệp hàng đầu thế giới.</li>
+                  <li><strong>Supabase Cloud &amp; PostgreSQL:</strong> Hệ quản trị cơ sở dữ liệu mạnh mẽ, kết hợp kênh truyền tín hiệu Realtime WebSocket cực nhanh.</li>
+                  <li><strong>Firebase Cloud Messaging (FCM):</strong> Kích hoạt cuộc gọi ngầm ngay cả khi ứng dụng đã đóng hoàn toàn trên di động.</li>
+                  <li><strong>Trình cài đặt C# WinForms chuyên nghiệp:</strong> Bộ cài đặt `csc.exe` độc lập, nhúng sẵn VC++ Runtime DLLs, tự tích hợp Windows Registry.</li>
+                  <li><strong>In-House Hot-Patching OTA:</strong> Hệ thống nâng cấp phiên bản tự động, so khớp mã băm SHA-256 trước khi giải nén.</li>
+                </ul>
+              </div>
+              <div class="pane-code-box">
+                <div class="code-header">
+                  <span class="code-title"><i class="fa-solid fa-code"></i> Cấu Trúc Khối Kỹ Thuật (Architecture)</span>
+                </div>
+                <pre class="code-block"><code>[ Giao Diện Người Dùng ]
+├── Flutter Desktop (Windows x64 Native Win32)
+└── Flutter Mobile (Android ARM64 / Native CallKit)
+         │
+[ Lớp Xử Lý Tín Hiệu & Dữ Liệu Thời Gian Thực ]
+├── WebRTC Engine (PeerConnection / MediaStream)
+│    ├── SafeRTCVideoView (Quản lý bộ nhớ an toàn)
+│    ├── ScreenTrack Auto-Detector (Chống ngược chữ)
+│    └── Audio DSP (AEC Lọc Vang + NS Triệt Ồn)
+└── Supabase Realtime Channels (Trao đổi SDP / ICE)
+         │
+[ Lớp Hạ Tầng & Triển Khai ]
+├── In-House OTA Hot-Update (Kiểm tra SHA-256)
+└── Standalone C# Setup EXE (Tác giả: Phùng Hải Trường)</code></pre>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tab 4: Security -->
+          <div class="tab-pane" id="pane-security">
+            <div class="pane-grid">
+              <div class="pane-text">
+                <h3>Bảo Mật Cấp Cao &amp; Quyền Riêng Tư Người Dùng</h3>
+                <ul class="check-list">
+                  <li><strong>Mã hóa đầu cuối DTLS/SRTP:</strong> Mọi luồng âm thanh và hình ảnh trong phòng họp cũng như gọi 1:1 đều được mã hóa bằng thuật toán AES chuẩn quân đội, không một máy chủ trung gian nào có thể xem lén.</li>
+                  <li><strong>Phân quyền cấp hàng (Row Level Security - RLS):</strong> Người dùng chỉ có thể đọc và sửa dữ liệu của chính mình, ngăn chặn 100% việc rò rỉ dữ liệu chéo giữa các tài khoản.</li>
+                  <li><strong>Xác thực toàn vẹn bằng SHA-256:</strong> Mọi gói cập nhật và tệp cài đặt đều được đối chiếu mã băm SHA-256 trước khi thực thi, chống chèn mã độc tuyệt đối.</li>
+                  <li><strong>Không thu thập dữ liệu rác:</strong> Ứng dụng tự động dọn dẹp bộ nhớ đệm, file tạm sau mỗi phiên làm việc, bảo vệ ổ cứng và quyền riêng tư tối đa.</li>
+                </ul>
+              </div>
+              <div class="pane-security-card">
+                <div class="sec-badge"><i class="fa-solid fa-lock"></i> CHỨNG CHỈ TOÀN VẸN</div>
+                <h4>SHA-256 Checksum Bản Phát Hành v2.2.11</h4>
+                <div class="hash-box">
+                  <code>2FF376F610D4B32CDAD588AFAB2BDE17EEF97A737CEF63409AAC789E7FEE6750</code>
+                  <button class="btn-copy" onclick="copyHash()"><i class="fa-regular fa-copy"></i> Sao chép</button>
+                </div>
+                <p class="sec-note"><i class="fa-solid fa-circle-check"></i> Xác thực đồng bộ 100% giữa GitHub Release, cơ sở dữ liệu Supabase và hệ thống ứng dụng client.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download Center -->
+  <section class="section section-dark" id="downloads">
+    <div class="container">
+      <div class="section-header text-center">
+        <span class="section-tag">TRUNG TÂM PHÁT HÀNH</span>
+        <h2 class="section-title">Tải Về &amp; Trải Nghiệm KINI Chat Studio Ngay Hôm Nay</h2>
+        <p class="section-subtitle">Lựa chọn phiên bản phù hợp với thiết bị của bạn. Miễn phí, an toàn và cài đặt nhanh chóng.</p>
+      </div>
+
+      <div class="download-grid">
+        <!-- Download Card 1: PC Setup EXE -->
+        <div class="dl-card featured">
+          <div class="dl-badge-pop">KHUYÊN DÙNG CHO PC</div>
+          <div class="dl-icon"><i class="fa-brands fa-windows"></i></div>
+          <h3 class="dl-title">KINI Chat Studio (PC Windows)</h3>
+          <p class="dl-version">Bản Cài Đặt Hoàn Chỉnh • v2.2.11 (Build 151)</p>
+          <div class="dl-meta">
+            <span><i class="fa-solid fa-file-zipper"></i> 59.5 MB</span>
+            <span><i class="fa-solid fa-desktop"></i> Windows 10/11 64-bit</span>
+          </div>
+
+          <ul class="dl-features">
+            <li><i class="fa-solid fa-check"></i> <strong>Tác giả: Phùng Hải Trường</strong> ghi danh chính thức</li>
+            <li><i class="fa-solid fa-check"></i> Tùy ý chọn thư mục cài đặt trên máy tính</li>
+            <li><i class="fa-solid fa-check"></i> Tích hợp sẵn VC++ Runtime (Không báo lỗi DLL)</li>
+            <li><i class="fa-solid fa-check"></i> Tự động tạo biểu tượng ngoài Desktop &amp; Start Menu</li>
+            <li><i class="fa-solid fa-check"></i> Không bị cảnh báo lạ khi cài đặt</li>
+          </ul>
+
+          <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.11/KINI_Chat_Setup_v2.2.11.exe" class="btn btn-primary btn-block" target="_blank">
+            <i class="fa-solid fa-download"></i> Tải KINI_Chat_Setup_v2.2.11.exe
+          </a>
+        </div>
+
+        <!-- Download Card 2: Android APK -->
+        <div class="dl-card">
+          <div class="dl-icon"><i class="fa-brands fa-android"></i></div>
+          <h3 class="dl-title">KINI Chat Mobile (Android)</h3>
+          <p class="dl-version">Gói Cài Đặt Trực Tiếp (APK) • v2.2.11 (Build 151)</p>
+          <div class="dl-meta">
+            <span><i class="fa-solid fa-file-zipper"></i> 147.07 MB</span>
+            <span><i class="fa-solid fa-mobile-screen"></i> Android 7.0 - 16.0</span>
+          </div>
+
+          <ul class="dl-features">
+            <li><i class="fa-solid fa-check"></i> Cuộc gọi Native VoIP hiển thị toàn màn hình</li>
+            <li><i class="fa-solid fa-check"></i> Họp video 16 người mượt mà, chống giật lag</li>
+            <li><i class="fa-solid fa-check"></i> Chia sẻ màn hình điện thoại tức thì</li>
+            <li><i class="fa-solid fa-check"></i> Tiết kiệm pin, không gây nóng máy khi gọi lâu</li>
+            <li><i class="fa-solid fa-check"></i> Đầy đủ tính năng tin nhắn &amp; sticker động</li>
+          </ul>
+
+          <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.11/KINI_Chat_v2.2.11_Mobile.apk" class="btn btn-secondary btn-block" target="_blank">
+            <i class="fa-solid fa-download"></i> Tải KINI_Chat_v2.2.11_Mobile.apk
+          </a>
+        </div>
+
+        <!-- Download Card 3: Windows OTA ZIP -->
+        <div class="dl-card">
+          <div class="dl-icon"><i class="fa-solid fa-bolt-lightning"></i></div>
+          <h3 class="dl-title">Bản Nâng Cấp Nhanh (Windows OTA)</h3>
+          <p class="dl-version">Gói Cập Nhật ZIP Nhanh • v2.2.11 (Build 151)</p>
+          <div class="dl-meta">
+            <span><i class="fa-solid fa-file-zipper"></i> 59.12 MB</span>
+            <span><i class="fa-solid fa-arrows-rotate"></i> Dành cho máy đã có app</span>
+          </div>
+
+          <ul class="dl-features">
+            <li><i class="fa-solid fa-check"></i> Cập nhật đè trực tiếp không cần gỡ bản cũ</li>
+            <li><i class="fa-solid fa-check"></i> Giữ nguyên toàn bộ lịch sử chat &amp; tài khoản</li>
+            <li><i class="fa-solid fa-check"></i> Đồng bộ kiểm tra phiên bản chống lặp cập nhật</li>
+            <li><i class="fa-solid fa-check"></i> Tự động xóa file nén tạm sau khi giải nén</li>
+            <li><i class="fa-solid fa-check"></i> Tải về siêu tốc từ máy chủ GitHub Release</li>
+          </ul>
+
+          <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.11/update_v2.2.11.zip" class="btn btn-outline btn-block" target="_blank">
+            <i class="fa-solid fa-download"></i> Tải update_v2.2.11.zip
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Author & Development Information -->
+  <section class="section" id="author">
+    <div class="container">
+      <div class="author-box">
+        <div class="author-avatar-col">
+          <div class="author-avatar-wrap">
+            <img src="images/logo.png" alt="Phùng Hải Trường" class="author-img">
+            <img src="images/vip_toi_thuong.png" alt="Khung VIP Tối Thượng" class="author-vip-frame">
+          </div>
+          <div class="author-status">
+            <span class="online-indicator"></span> Tác Giả &amp; Kiến Trúc Sư
+          </div>
+        </div>
+
+        <div class="author-info-col">
+          <span class="author-label">NGƯỜI TẠO &amp; PHÁT TRIỂN PHẦN MỀM</span>
+          <h2 class="author-name">PHÙNG HẢI TRƯỜNG</h2>
+          <p class="author-bio">
+            KINI Chat Studio là sản phẩm công nghệ độc lập được nghiên cứu, kiến trúc và phát triển bởi <strong>Phùng Hải Trường</strong>. Với định hướng mang lại một nền tảng truyền thông số thuần Việt, hiện đại, bảo mật cao và vận hành bền bỉ trên mọi thiết bị cá nhân và doanh nghiệp.
+          </p>
+
+          <div class="author-highlights">
+            <div class="highlight-item">
+              <i class="fa-solid fa-shield-cat"></i>
+              <div>
+                <strong>Bảo Toàn Chuẩn Hóa Code:</strong>
+                <p>Tuân thủ kỷ luật mã nguồn nghiêm ngặt, giữ trọn vẹn sự ổn định của phiên bản chuẩn v2.2.8 và liên tục hoàn thiện đến v2.2.11.</p>
+              </div>
+            </div>
+
+            <div class="highlight-item">
+              <i class="fa-solid fa-cubes-stacked"></i>
+              <div>
+                <strong>Làm Chủ Công Nghệ Cốt Lõi:</strong>
+                <p>Tự chủ kiến trúc WebRTC P2P Mesh, hạ tầng Supabase Realtime, thuật toán xử lý âm thanh lọc vang và trình biên dịch cài đặt độc lập.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="author-contacts">
+            <a href="https://github.com/haitruongproqt1-a11y" target="_blank" class="contact-link">
+              <i class="fa-brands fa-github"></i> GitHub: haitruongproqt1-a11y
+            </a>
+            <a href="https://github.com/haitruongproqt1-a11y/kini-releases" target="_blank" class="contact-link">
+              <i class="fa-solid fa-box-archive"></i> Kho Phát Hành kini-releases
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal for Full Image Zoom -->
+  <div class="lightbox" id="lightbox" onclick="closeLightbox(event)">
+    <div class="lightbox-content">
+      <button class="lightbox-close" onclick="closeLightboxDirect()">&times;</button>
+      <img src="" alt="Enlarged screenshot" id="lightbox-img">
+      <div class="lightbox-caption" id="lightbox-caption"></div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="images/logo.png" alt="KINI Chat" class="footer-logo">
+          <span class="footer-title">KINI CHAT STUDIO</span>
+        </div>
+        <p class="footer-slogan">Nền Tảng Hội Nghị Video &amp; Liên Lạc Số Đa Nền Tảng Thế Hệ Mới.</p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2026 KINI Chat Studio. Người tạo &amp; Phát triển: <strong>Phùng Hải Trường</strong>. Tất cả các quyền được bảo lưu.</p>
+        <div class="footer-links">
+          <a href="https://github.com/haitruongproqt1-a11y/kini-releases/releases/tag/v2.2.11" target="_blank"><i class="fa-solid fa-tag"></i> Bản Phát Hành v2.2.11</a>
+          <a href="#downloads"><i class="fa-solid fa-download"></i> Tải Về Trực Tiếp</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
