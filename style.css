@@ -621,10 +621,10 @@ body {
   margin-bottom: 60px;
 }
 
-/* Khung trình diễn thiết bị máy tính 3D */
+/* Khung Điện Thoại Cao Cấp Nhỏ Gọn (Hero Phone Mockup) */
 .hero-preview {
   position: relative;
-  max-width: 1060px;
+  max-width: 310px; /* Thu nhỏ hoàn hảo, chuẩn kích thước điện thoại thanh thoát */
   margin: 0 auto;
 }
 
@@ -633,128 +633,124 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 95%;
-  height: 88%;
-  background: radial-gradient(ellipse, rgba(45, 212, 191, 0.32) 0%, rgba(59, 130, 246, 0.18) 50%, transparent 75%);
-  filter: blur(50px);
+  width: 90%;
+  height: 85%;
+  background: radial-gradient(ellipse, rgba(45, 212, 191, 0.35) 0%, rgba(59, 130, 246, 0.18) 50%, transparent 75%);
+  filter: blur(40px);
   z-index: 0;
 }
 
-.preview-device {
+.phone-frame {
   position: relative;
   z-index: 1;
   background: #09101d;
-  border: 1px solid rgba(45, 212, 191, 0.45);
-  border-radius: var(--radius-lg);
+  border: 7px solid #162032;
+  border-radius: 40px;
   overflow: hidden;
-  box-shadow: 0 30px 70px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(45, 212, 191, 0.25);
+  box-sizing: border-box;
 }
 
-.device-header {
+.phone-notch {
+  position: absolute;
+  top: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 18px;
+  background: #03060c;
+  border-radius: 20px;
+  z-index: 10;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  padding: 12px 18px;
-  background: #060b14;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.device-controls {
-  display: flex;
-  gap: 6px;
-}
-
-.control-dot {
-  width: 11px;
-  height: 11px;
-  border-radius: 50%;
-}
-.control-dot.red { background: #ef4444; }
-.control-dot.yellow { background: #f59e0b; }
-.control-dot.green { background: #10b981; }
-
-.device-title {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  display: flex;
-  align-items: center;
+  justify-content: center;
   gap: 8px;
-  font-weight: 600;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
 }
 
-.badge-secure {
-  font-size: 0.75rem;
-  background: rgba(16, 185, 129, 0.15);
-  color: var(--success);
-  border: 1px solid rgba(16, 185, 129, 0.3);
-  padding: 4px 10px;
-  border-radius: 999px;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
+.camera-lens {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #0f1c2e;
+  border: 1px solid rgba(45, 212, 191, 0.3);
 }
 
-.device-screen {
+.speaker-grill {
+  width: 30px;
+  height: 3px;
+  background: #1e293b;
+  border-radius: 2px;
+}
+
+.phone-screen {
   position: relative;
-  padding: 8px;
   background: #020409;
+  overflow: hidden;
+  border-radius: 32px;
 }
 
 .screen-img {
   width: 100%;
   height: auto;
-  border-radius: var(--radius-sm);
   display: block;
 }
 
-/* Sóng âm thanh 3D HUD Visualizer */
+.phone-bottom-bar {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  z-index: 10;
+}
+
 .audio-hud-box {
   position: absolute;
-  top: 24px;
-  right: 24px;
-  background: rgba(6, 11, 22, 0.85);
-  backdrop-filter: blur(10px);
+  top: 36px;
+  right: 12px;
+  background: rgba(6, 11, 22, 0.88);
+  backdrop-filter: blur(8px);
   border: 1px solid rgba(45, 212, 191, 0.4);
-  padding: 8px 16px;
+  padding: 4px 10px;
   border-radius: 999px;
   display: flex;
   align-items: center;
-  gap: 12px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.6);
+  gap: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
+  z-index: 5;
 }
 
 .hud-label {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   font-weight: 700;
   color: var(--primary);
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
 }
 
 .sound-wave {
   display: flex;
   align-items: center;
   gap: 3px;
-  height: 18px;
+  height: 14px;
 }
 
 .sound-wave .bar {
-  width: 3px;
+  width: 2.5px;
   background: linear-gradient(to top, #2dd4bf, #38bdf8);
   border-radius: 2px;
   animation: wave 1.2s ease-in-out infinite;
 }
 
-.sound-wave .b1 { height: 6px; animation-delay: 0.1s; }
-.sound-wave .b2 { height: 14px; animation-delay: 0.3s; }
-.sound-wave .b3 { height: 18px; animation-delay: 0.2s; }
-.sound-wave .b4 { height: 10px; animation-delay: 0.4s; }
-.sound-wave .b5 { height: 16px; animation-delay: 0.15s; }
-.sound-wave .b6 { height: 12px; animation-delay: 0.35s; }
-.sound-wave .b7 { height: 15px; animation-delay: 0.25s; }
-.sound-wave .b8 { height: 8px; animation-delay: 0.45s; }
+.sound-wave .b1 { height: 5px; animation-delay: 0.1s; }
+.sound-wave .b2 { height: 11px; animation-delay: 0.3s; }
+.sound-wave .b3 { height: 14px; animation-delay: 0.2s; }
+.sound-wave .b4 { height: 8px; animation-delay: 0.4s; }
 
 @keyframes wave {
   0%, 100% { transform: scaleY(0.4); }
@@ -762,7 +758,7 @@ body {
 }
 
 .hud-status {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   color: #34d399;
   font-weight: 700;
 }
@@ -770,25 +766,26 @@ body {
 .screen-tag-overlay {
   position: absolute;
   bottom: 24px;
-  left: 24px;
+  left: 12px;
   display: flex;
-  gap: 10px;
+  gap: 6px;
+  z-index: 5;
 }
 
 .tag-live {
   background: rgba(239, 68, 68, 0.9);
   color: #ffffff;
-  padding: 5px 12px;
+  padding: 3px 8px;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .tag-live i {
-  font-size: 0.6rem;
+  font-size: 0.55rem;
   animation: pulse-red 1.5s infinite;
 }
 
@@ -802,13 +799,13 @@ body {
   backdrop-filter: blur(8px);
   border: 1px solid rgba(45, 212, 191, 0.45);
   color: var(--primary);
-  padding: 5px 14px;
+  padding: 3px 10px;
   border-radius: 999px;
-  font-size: 0.75rem;
+  font-size: 0.65rem;
   font-weight: 700;
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 /* Các vùng giao diện chung */
