@@ -234,7 +234,7 @@ function initGalleryTabs() {
       galleryItems.forEach(item => {
         const cat = item.getAttribute('data-category');
         if (filter === 'all' || cat === filter) {
-          item.style.display = 'block';
+          item.style.display = 'flex';
           item.style.animation = 'fadeIn 0.3s ease';
         } else {
           item.style.display = 'none';

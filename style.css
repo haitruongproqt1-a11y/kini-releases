@@ -846,23 +846,93 @@ body {
 
 .gallery-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  gap: 28px;
 }
 
 .gallery-item {
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   overflow: hidden;
-  background: #020409;
-  border: 1px solid var(--border-subtle);
+  background: rgba(11, 19, 36, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(45, 212, 191, 0.24);
   transition: var(--transition);
   position: relative;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
 }
 
+.gallery-item:hover {
+  transform: translateY(-6px);
+  border-color: var(--primary);
+  box-shadow: 0 20px 48px rgba(0, 0, 0, 0.7), 0 0 25px rgba(45, 212, 191, 0.22);
+}
+
+/* Thanh tiêu đề cửa sổ mô phỏng macOS / Windows Desktop */
+.mockup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 16px;
+  background: rgba(6, 11, 22, 0.95);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.mockup-dots {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.mockup-dots .dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.mockup-dots .dot.red { background: #ef4444; }
+.mockup-dots .dot.yellow { background: #f59e0b; }
+.mockup-dots .dot.green { background: #10b981; }
+
+.mockup-title {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.btn-zoom-mini {
+  background: rgba(45, 212, 191, 0.15);
+  border: 1px solid rgba(45, 212, 191, 0.4);
+  color: var(--primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: var(--transition);
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.btn-zoom-mini:hover {
+  background: var(--primary);
+  color: #050813;
+}
+
+/* Vùng hiển thị ảnh 100% trọn vẹn, không có chữ đè lên */
 .gallery-thumb {
   position: relative;
   overflow: hidden;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 16 / 11;
+  background: #020409;
+  cursor: pointer;
 }
 
 .gallery-thumb img {
@@ -870,31 +940,64 @@ body {
   height: 100%;
   object-fit: cover;
   display: block;
-  transition: transform 0.5s ease;
+  transition: transform 0.4s ease;
 }
 
 .gallery-thumb:hover img {
-  transform: scale(1.05);
+  transform: scale(1.04);
 }
 
-.gallery-overlay {
+.thumb-hover-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top, rgba(5, 8, 18, 0.96) 20%, rgba(5, 8, 18, 0.4) 65%, transparent);
-  padding: 20px;
+  background: rgba(5, 8, 18, 0.45);
+  backdrop-filter: blur(2px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.gallery-thumb:hover .thumb-hover-overlay {
+  opacity: 1;
+}
+
+.hover-btn {
+  background: rgba(13, 148, 136, 0.95);
+  color: #ffffff;
+  padding: 8px 18px;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Khung thông tin tính năng nằm riêng bên dưới */
+.gallery-info {
+  padding: 18px 20px 22px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  opacity: 0.94;
+  flex-grow: 1;
+  background: rgba(8, 14, 28, 0.75);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gallery-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .gallery-tag {
-  align-self: flex-start;
   font-size: 0.72rem;
   font-weight: 700;
-  padding: 4px 10px;
+  padding: 3px 10px;
   border-radius: 999px;
-  margin-bottom: 8px;
   display: inline-flex;
   align-items: center;
   gap: 5px;
@@ -906,45 +1009,28 @@ body {
 .gallery-tag.chat { background: rgba(45, 212, 191, 0.2); color: var(--primary); border: 1px solid rgba(45, 212, 191, 0.4); }
 .gallery-tag.vip { background: rgba(139, 92, 246, 0.2); color: #a78bfa; border: 1px solid rgba(139, 92, 246, 0.4); }
 
-.gallery-overlay h4 {
-  font-size: 1.05rem;
+.gallery-res {
+  font-size: 0.72rem;
   font-weight: 700;
-  margin-bottom: 4px;
-}
-
-.gallery-overlay p {
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  margin-bottom: 12px;
-  line-height: 1.4;
-}
-
-.btn-zoom {
-  align-self: flex-start;
-  background: rgba(255, 255, 255, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  color: #ffffff;
-  padding: 7px 14px;
-  border-radius: var(--radius-sm);
-  font-size: 0.78rem;
-  cursor: pointer;
-  font-weight: 700;
-  transition: var(--transition);
+  color: var(--primary);
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
-.btn-zoom:hover {
-  background: var(--primary);
-  color: #050813;
-  border-color: var(--primary);
+.gallery-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 8px;
+  line-height: 1.35;
 }
 
-.gallery-item:hover {
-  transform: translateY(-5px);
-  border-color: var(--primary);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.6);
+.gallery-desc {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  line-height: 1.55;
+  margin: 0;
 }
 
 /* Phần Đánh giá chất lượng & kỹ thuật */
