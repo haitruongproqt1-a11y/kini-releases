@@ -618,194 +618,58 @@ body {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 60px;
+  margin-bottom: 34px;
 }
 
-/* Khung Điện Thoại Cao Cấp Nhỏ Gọn (Hero Phone Mockup) */
-.hero-preview {
-  position: relative;
-  max-width: 310px; /* Thu nhỏ hoàn hảo, chuẩn kích thước điện thoại thanh thoát */
-  margin: 0 auto;
-}
-
-.preview-glow {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
-  height: 85%;
-  background: radial-gradient(ellipse, rgba(45, 212, 191, 0.35) 0%, rgba(59, 130, 246, 0.18) 50%, transparent 75%);
-  filter: blur(40px);
-  z-index: 0;
-}
-
-.phone-frame {
-  position: relative;
-  z-index: 1;
-  background: #09101d;
-  border: 7px solid #162032;
-  border-radius: 40px;
-  overflow: hidden;
-  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.8), 0 0 35px rgba(45, 212, 191, 0.25);
-  box-sizing: border-box;
-}
-
-.phone-notch {
-  position: absolute;
-  top: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 18px;
-  background: #03060c;
-  border-radius: 20px;
-  z-index: 10;
-  display: flex;
+/* Thanh cam kết chất lượng & chuẩn mực kỹ thuật (Hero Trust Bar) */
+.hero-trust-bar {
+  display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
-}
-
-.camera-lens {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: #0f1c2e;
-  border: 1px solid rgba(45, 212, 191, 0.3);
-}
-
-.speaker-grill {
-  width: 30px;
-  height: 3px;
-  background: #1e293b;
-  border-radius: 2px;
-}
-
-.phone-screen {
-  position: relative;
-  background: #020409;
-  overflow: hidden;
-  border-radius: 32px;
-}
-
-.screen-img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.phone-bottom-bar {
-  position: absolute;
-  bottom: 8px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 90px;
-  height: 4px;
-  background: rgba(255, 255, 255, 0.3);
-  border-radius: 2px;
-  z-index: 10;
-}
-
-.audio-hud-box {
-  position: absolute;
-  top: 36px;
-  right: 12px;
-  background: rgba(6, 11, 22, 0.88);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.4);
-  padding: 4px 10px;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: rgba(14, 23, 42, 0.68);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(45, 212, 191, 0.28);
+  padding: 12px 28px;
   border-radius: 999px;
+  margin-top: 8px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45), inset 0 0 15px rgba(45, 212, 191, 0.05);
+}
+
+.trust-item {
   display: flex;
   align-items: center;
   gap: 8px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.6);
-  z-index: 5;
+  font-size: 0.88rem;
+  color: #cbd5e1;
 }
 
-.hud-label {
-  font-size: 0.65rem;
-  font-weight: 700;
+.trust-item i {
   color: var(--primary);
-  display: flex;
-  align-items: center;
-  gap: 4px;
+  font-size: 0.95rem;
 }
 
-.sound-wave {
-  display: flex;
-  align-items: center;
-  gap: 3px;
-  height: 14px;
-}
-
-.sound-wave .bar {
-  width: 2.5px;
-  background: linear-gradient(to top, #2dd4bf, #38bdf8);
-  border-radius: 2px;
-  animation: wave 1.2s ease-in-out infinite;
-}
-
-.sound-wave .b1 { height: 5px; animation-delay: 0.1s; }
-.sound-wave .b2 { height: 11px; animation-delay: 0.3s; }
-.sound-wave .b3 { height: 14px; animation-delay: 0.2s; }
-.sound-wave .b4 { height: 8px; animation-delay: 0.4s; }
-
-@keyframes wave {
-  0%, 100% { transform: scaleY(0.4); }
-  50% { transform: scaleY(1); }
-}
-
-.hud-status {
-  font-size: 0.65rem;
-  color: #34d399;
-  font-weight: 700;
-}
-
-.screen-tag-overlay {
-  position: absolute;
-  bottom: 24px;
-  left: 12px;
-  display: flex;
-  gap: 6px;
-  z-index: 5;
-}
-
-.tag-live {
-  background: rgba(239, 68, 68, 0.9);
+.trust-item strong {
   color: #ffffff;
-  padding: 3px 8px;
-  border-radius: 999px;
-  font-size: 0.65rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
 }
 
-.tag-live i {
-  font-size: 0.55rem;
-  animation: pulse-red 1.5s infinite;
+.trust-divider {
+  width: 1px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.16);
 }
 
-@keyframes pulse-red {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0.3; }
-}
-
-.tag-author {
-  background: rgba(14, 23, 42, 0.9);
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(45, 212, 191, 0.45);
-  color: var(--primary);
-  padding: 3px 10px;
-  border-radius: 999px;
-  font-size: 0.65rem;
-  font-weight: 700;
-  display: inline-flex;
-  align-items: center;
-  gap: 4px;
+@media (max-width: 992px) {
+  .hero-trust-bar {
+    border-radius: var(--radius-lg);
+    gap: 14px;
+    padding: 14px 20px;
+  }
+  .trust-divider {
+    display: none;
+  }
 }
 
 /* Các vùng giao diện chung */
