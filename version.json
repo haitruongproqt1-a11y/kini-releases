@@ -1,24 +1,12 @@
 {
-  "version": "2.2.29",
-  "buildNumber": 168,
-  "releaseDate": "2026-11-04",
-  "changelog": [
-    "Sửa triệt để gửi nhận Sticker VIP Gấu & Mèo hiển thị đồng bộ hoạt họa cả bên gửi và bên nhận.",
-    "Chỉ giữ lại duy nhất 1 bộ nhãn dán Gấu & Mèo độc quyền.",
-    "Sửa lỗi sao chép hình ảnh trên PC và Mobile khi dán ra đúng hình ảnh thay vì tên chữ.",
-    "Chuyển đổi tức thì các ký tự biểu cảm nhanh :), :D, :)), :( thành Emoji sinh động.",
-    "Bỏ viền khung thô và tên người gửi trên bong bóng ảnh, video theo chuẩn giao diện Zalo.",
-    "Đồng bộ độ tương phản chữ rõ nét trên mọi giao diện sáng tối.",
-    "Tự động đồng bộ và nạp bản mới nhất trên nền tảng Web."
-  ],
+  "version": "2.2.30",
+  "buildNumber": 170,
+  "releaseDate": "2026-11-05",
+  "changelog": "Đồng bộ tức thì Album ảnh & video thiết bị: Tự động phát hiện ảnh/video mới chụp; loại bỏ 100% ảnh/video đã xóa, không còn icon ảnh vỡ; vuốt xuống để làm mới; tự động dọn dẹp các tệp cài đặt cũ giải phóng dung lượng bộ nhớ máy; đồng bộ Google Drive PC & nâng cấp đăng nhập Google Mobile ổn định 100%.",
   "minSupportedVersion": "1.0.0",
   "critical": false,
-  "otaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.28/update_v2.2.28.zip",
-  "latestOtaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.28/latest_ota_package.zip",
-  "apkUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.28/KINI_Chat_v2.2.28_Mobile.apk",
-  "downloadUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/tag/v2.2.28",
-  "build_number": 169,
-  "release_notes": "Bản cập nhật v2.2.29: Sửa triệt để gửi nhận Sticker VIP Gấu & Mèo; Fix sao chép dán hình ảnh và file; Chuyển đổi nhanh biểu cảm Emoticon; Tối ưu bong bóng hình ảnh và video chuẩn Zalo không viền; Đồng bộ độ tương phản chữ Theme Sáng/Tối; Tự động cập nhật Web.",
-  "download_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.29/latest_ota_package.zip",
-  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.29/latest_ota_package.zip"
+  "otaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.30/update_v2.2.30.zip",
+  "latestOtaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.30/latest_ota_package.zip",
+  "apkUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.30/KINI_Chat_v2.2.30_Mobile.apk",
+  "downloadUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/tag/v2.2.30"
 }
