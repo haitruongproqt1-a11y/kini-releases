@@ -1,28 +1,12 @@
 {
-  "version": "2.2.27",
-  "build_number": 167,
-  "title": "KINI Chat v2.2.27 • Nền Video Futuristic 1080p, Logo Chuẩn & Cân Chỉnh Trọn Màn Hình",
-  "changelog": [
-    "Phát hành chính thức KINI Chat v2.2.27 (Build 167) đồng bộ tuyệt đối trên toàn bộ PC, Mobile và Web PWA.",
-    "Nền Video Futuristic Blue Technology 1080p: Giữ nguyên độ sáng và màu sắc rực rỡ chuẩn gốc (không bị tối), toàn màn hình 100% trên cả Mobile, PC và Web, lặp vô tận mượt mà & sạch dấu 100%.",
-    "Ẩn hoàn toàn thanh cuộn dọc (Scrollbar): Cân chỉnh kích thước trọn vẹn mọi màn hình, loại bỏ triệt để thanh kéo lên xuống trên PC và Web.",
-    "Đồng bộ Logo KINI Chat thương hiệu chuẩn trên Web: Hiển thị logo chính thức đồng bộ 100% với giao diện trên PC và Mobile.",
-    "Chuẩn hóa Danh bạ 100% Bạn bè: Chỉ hiển thị những người đã kết bạn thành công, loại bỏ hoàn toàn người lạ trên mọi nền tảng.",
-    "Tự động kích hoạt Google Drive 5TB: Không cần đăng nhập lại, cố định Gmail chính chủ bảo mật tuyệt đối.",
-    "Tự động dọn dẹp bộ nhớ: Xóa sạch các gói cập nhật và tệp tạm trong kini_ota_runtime, chống phình to dung lượng thiết bị."
-  ],
-  "release_notes": "• Phát hành chính thức KINI Chat v2.2.27 (Build 167) đồng bộ tuyệt đối trên toàn bộ PC, Mobile và Web PWA.\n• Nền Video Futuristic Blue Technology 1080p: Giữ nguyên độ sáng và màu sắc rực rỡ chuẩn gốc (không bị tối), toàn màn hình 100% trên cả Mobile, PC và Web, lặp vô tận mượt mà & sạch dấu 100%.\n• Ẩn hoàn toàn thanh cuộn dọc (Scrollbar): Cân chỉnh kích thước trọn vẹn mọi màn hình, loại bỏ triệt để thanh kéo lên xuống trên PC và Web.\n• Đồng bộ Logo KINI Chat thương hiệu chuẩn trên Web: Hiển thị logo chính thức đồng bộ 100% với giao diện trên PC và Mobile.\n• Chuẩn hóa Danh bạ 100% Bạn bè: Chỉ hiển thị những người đã kết bạn thành công, loại bỏ hoàn toàn người lạ trên mọi nền tảng.\n• Tự động kích hoạt Google Drive 5TB: Không cần đăng nhập lại, cố định Gmail chính chủ bảo mật tuyệt đối.\n• Tự động dọn dẹp bộ nhớ: Xóa sạch các gói cập nhật và tệp tạm trong kini_ota_runtime, chống phình to dung lượng thiết bị.",
-  "package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.27/update_v2.2.27.zip",
-  "latest_package_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.27/latest_ota_package.zip",
-  "ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.27/update_v2.2.27.zip",
-  "windows_ota_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.27/update_v2.2.27.zip",
-  "apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.27/KINI_Chat_v2.2.27_Mobile.apk",
-  "android_apk_url": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.27/KINI_Chat_v2.2.27_Mobile.apk",
-  "release_date": "2026-11-04 20:53:36",
-  "released_at": "2026-11-04 20:53:36",
-  "is_target_global": false,
-  "is_mandatory": false,
-  "force_update": false,
-  "forceUpdate": false,
-  "sha256": "6C413DEA8885F854F42AE25FFD18E5694A5C19EA3644E553516BE65E2643646E"
+  "version": "2.2.28",
+  "buildNumber": 168,
+  "releaseDate": "2026-11-04",
+  "changelog": "Nâng cấp giao diện Ảnh & Video Zalo không viền bo góc 14px, gắn tag HD/HD | thời lượng, nút chuyển tiếp tiện lợi; hỗ trợ dán ảnh từ clipboard (Ctrl+V); bộ Zalo Emoji 4 danh mục và gõ tắt biểu cảm (:D, :), :)), :(((, :v, <3); chỉnh sửa độ tương phản màu chữ giao diện Sáng/Tối rõ nét; đồng bộ Realtime thiết bị đăng nhập và đăng xuất từ xa 2 chiều; tối ưu updater OTA an toàn chống lỗi.",
+  "minSupportedVersion": "1.0.0",
+  "critical": false,
+  "otaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.28/update_v2.2.28.zip",
+  "latestOtaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.28/latest_ota_package.zip",
+  "apkUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.28/KINI_Chat_v2.2.28_Mobile.apk",
+  "downloadUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/tag/v2.2.28"
 }
