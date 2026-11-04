@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <base href="/kini-releases/app/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="KINI Chat - Ứng dụng liên lạc bảo mật thời gian thực chuẩn màn hình iPhone và Android.">
+
+  <!-- Chuẩn hóa khung màn hình iPhone & Android (Tai thỏ, Dynamic Island, Safe Area, chống giật) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+  <!-- PWA & Web App Meta Tags -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="theme-color" content="#0068FF">
+
+  <!-- iOS Safari Standalone Meta Tags -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="KINI Chat">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>KINI Chat</title>
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      -webkit-tap-highlight-color: transparent;
+    }
+    html, body {
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: #0B0F19;
+      color: #FFFFFF;
+      overflow: hidden;
+      position: fixed;
+      touch-action: pan-x pan-y;
+      overscroll-behavior: none;
+      -webkit-user-select: none;
+      user-select: none;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    /* Màn hình chờ khởi động KINI hiện đại */
+    #loading-splash {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at center, #131E3A 0%, #0B0F19 100%);
+      z-index: 999999;
+      transition: opacity 0.4s ease-out;
+    }
+
+    .brand-logo-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 28px;
+    }
+
+    .brand-logo {
+      width: 86px;
+      height: 86px;
+      border-radius: 22px;
+      box-shadow: 0 10px 30px rgba(0, 104, 255, 0.45);
+      animation: pulseGlow 2.5s infinite ease-in-out;
+    }
+
+    .brand-title {
+      font-size: 26px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      margin-top: 16px;
+      background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .brand-subtitle {
+      font-size: 13px;
+      color: #94A3B8;
+      margin-top: 6px;
+      font-weight: 500;
+    }
+
+    /* Vòng tròn loading xoay công nghệ */
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 3px solid rgba(255, 255, 255, 0.1);
+      border-top-color: #00f2fe;
+      border-radius: 50%;
+      animation: spin 0.9s cubic-bezier(0.55, 0.15, 0.45, 0.85) infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    @keyframes pulseGlow {
+      0%, 100% {
+        transform: scale(1);
+        filter: drop-shadow(0 0 15px rgba(0, 104, 255, 0.5));
+      }
+      50% {
+        transform: scale(1.04);
+        filter: drop-shadow(0 0 25px rgba(0, 242, 254, 0.75));
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Màn hình Splash KINI -->
+  <div id="loading-splash">
+    <div class="brand-logo-container">
+      <img src="icons/Icon-192.png" alt="KINI Chat" class="brand-logo" />
+      <div class="brand-title">KINI CHAT</div>
+      <div class="brand-subtitle">Ứng Dụng Liên Lạc Bảo Mật Đa Nền Tảng</div>
+    </div>
+    <div class="spinner"></div>
+  </div>
+
+  <script>
+    // Khi Flutter đã khởi tạo và render xong, ẩn splash mượt mà
+    window.addEventListener('flutter-first-frame', function () {
+      const splash = document.getElementById('loading-splash');
+      if (splash) {
+        splash.style.opacity = '0';
+        setTimeout(function() {
+          splash.remove();
+        }, 400);
+      }
+    });
+  </script>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>

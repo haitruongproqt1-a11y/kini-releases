@@ -1,0 +1,35 @@
+{
+    "name": "KINI Chat - Ứng dụng liên lạc bảo mật",
+    "short_name": "KINI Chat",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "#0B0F19",
+    "theme_color": "#0068FF",
+    "description": "KINI Chat - Ứng dụng liên lạc bảo mật thời gian thực chuẩn màn hình iPhone và Android.",
+    "orientation": "any",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "icons/Icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        },
+        {
+            "src": "icons/Icon-maskable-192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "maskable"
+        },
+        {
+            "src": "icons/Icon-maskable-512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "maskable"
+        }
+    ]
+}
