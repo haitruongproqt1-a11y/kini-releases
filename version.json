@@ -1,12 +1,12 @@
 {
-  "version": "2.2.31",
-  "buildNumber": 171,
+  "version": "2.2.32",
+  "buildNumber": 172,
   "releaseDate": "2026-11-05",
-  "changelog": "Tinh gọn và tối ưu hóa giao diện Đăng nhập Google & Apple: Loại bỏ hoàn toàn các nút phụ thừa, giữ bố cục đăng nhập tinh tế, sắc nét; duy trì cơ chế đăng nhập Google/Apple ổn định 100% trên mọi nền tảng (PC, Mobile, Web); tự động dọn dẹp bộ nhớ máy.",
+  "changelog": "Khắc phục triệt để lỗi cuộc trò chuyện tự hiển thị lại sau khi xóa: Đồng bộ và bảo toàn trạng thái xóa vĩnh viễn trên mọi thiết bị; lọc sạch lịch sử cuộc gọi và tin nhắn cũ khi làm mới hoặc kéo tải lại (pull-to-refresh); tự động dọn dẹp bộ nhớ máy.",
   "minSupportedVersion": "1.0.0",
   "critical": false,
-  "otaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.31/update_v2.2.31.zip",
-  "latestOtaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.31/latest_ota_package.zip",
-  "apkUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.31/KINI_Chat_v2.2.31_Mobile.apk",
-  "downloadUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/tag/v2.2.31"
+  "otaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.32/update_v2.2.32.zip",
+  "latestOtaUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.32/latest_ota_package.zip",
+  "apkUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/download/v2.2.32/KINI_Chat_v2.2.32_Mobile.apk",
+  "downloadUrl": "https://github.com/haitruongproqt1-a11y/kini-releases/releases/tag/v2.2.32"
 }
